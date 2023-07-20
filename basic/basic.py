@@ -73,7 +73,7 @@ def iterate_dict(dict):
 
 def logical_operator():
     """
-    逻辑运算符
+    逻辑运算符,优先级not>and>or
     :return:
     """
     a = True
@@ -91,3 +91,6 @@ if __name__ == '__main__':
     # reverse_str("张洁升Jason")
     # iterate_dict({"k1": 1, "k2": 2, "k3": 3})
     logical_operator()
+
+# python不支持Switch语句，没有do...while循环
+# pass语句用于占位，因为如果定义一个空函数，程序会报错，当你没有想好函数的内容是可以用 pass 填充，使程序可以正常运行。
