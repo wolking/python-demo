@@ -21,13 +21,27 @@ def undefined_param_length2(**kwargs):
 
 
 def anonymous(d):
-    a = lambda i: i+10
-    b = lambda j, h, c: a(d)+j+h+c
+    a = lambda i: i + 10
+    b = lambda j, h, c: a(d) + j + h + c
     print b(1, 2, 3)
+
+
+def nest_func():
+    """
+    嵌套函数
+    :return:
+    """
+    print "这是一个嵌套函数，现在调用嵌套函数"
+
+    def nest():
+        print "我是嵌套函数"
+
+    nest()
 
 
 if __name__ == '__main__':
     # 函数
     # undefined_param_length(1, 2, 3, 4)
     # undefined_param_length2(a=1, b=2, c=3)
-    anonymous(5)
+    # anonymous(5)
+    nest_func()
